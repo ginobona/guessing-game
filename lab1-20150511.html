@@ -1,40 +1,79 @@
-<script type="text/javascript">
-  var answer, message, hours, name;
-<<<<<<< HEAD
-=======
+<!doctype html>
+<html>
+  <head>
+    <title>The Unofficial Shred-A-Rator Index</title>
+  </head>
+  <body>
+    <h1>Welcome To The Unofficial Shred-A-Rator Index</h1>
+    <img src="http://www.harmonycentral.com/forum/filedata/fetch?id=30939988">
+    <section>
+      <h2>Let's find out if you've got the chops to rock!</h2>
+      <p>The game will ask you one question: "How many hours have you spent playing the guitar?"</p>
+      <p>Now you <em>must</em> be honest. Because the Unofficial Shred-A-Rator Index can sniff out a bullshitter faster than Steve Vai tapping through seventh arpeggios.</p>
+    </section>
+    <section>
+      <h3>Here's how it goes, yo:</h3>
+      <ol>
+        <li>The Unofficial Shred-A-Rator Index will ask you how many hours you have spent playing the guitar.</li>
+        <li>You will answer with <em>complete honesty</em> about how many hours you have spent playing the guitar.</li>
+        <li>Based on our proprietary algortihm, the Unofficial Shred-A-Rator Index will reveal your <strong>Shred Level&trade;</strong>.</li>
+        <li>Then share your <strong>Shred Level&trade;</strong> on <a href="http://www.facebook.com">Facebook</a> and <a href="http://www.twitter.com">Twitter.</a></li>
+      </ol>
+    </section>
+    <section>
+      <h2>Ready. Set. Shred!</h2><br>
+      <img src="http://www.casinoslots.co.nz/img/play_now_button.png">
+      <p>Got a question? <a href="mailto: shredmaster@shred4life.com">Send an email to our Shred Master.</a><br>
+      <form action="URL">
+        <p>Don't forget to subscribe to our mailing list for shred-tastic tips:</p>
+        <input type="text" name="shredmaster@shred4life.com" />
+        <input type="submit" name="subscribe"
+          value="Subscribe" />
+      </form>
+    </section>
+      <aside>
+        <h4>Other Sites That Rock</h4>
+          <ul>
+            <li><a href=“http://www.fnm.com”>Faith No More</a></li>
+            <li><a href=“http://www.whitestripes.com”>The White Stripes</a></li>
+            <li><a href="http://www.qotsa.com/">Queens of the Stone Age</a></li>
+          </ul>
+      </aside>
+      <aside>
+        <h4>What The Shredders Are Saying About Us</h4>
+          <p><em>"The Unofficial Shred-A-Rator Index is spot-on, son. It let's me know what's up every time I use it."</em><br>
+          - Claudio Sanchez
+          <p><em>"If you can't handle the truth, don't even bother with the Unofficial Shred-A-Rator Index."</em><br>
+          - Jack White
+          <p><em>"I wish this site had more purple."</em><br>
+          - Prince
+      </aside>
+      <footer>
+        <p>&copy; 2015 Unofficial Shred-A-Rator Index. All rights reserved. Those who disobey will regret it.</p>
+      </footer>
 
->>>>>>> 2f70b70f59472c8f09ff465c574da2e1df7cd708
-  var Player = function(name, hours) {
-    this.name = name;
-    this.hours = hours;
-  }
-<<<<<<< HEAD
-  name = prompt("What is your name?");
-  hours = prompt("Hi there, " + name + ". How many hours have you spent playing the guitar?");
-  var namePlayer = new Player(name, hours);
-  answer = parseInt(hours);
-=======
-
-  name = prompt("What is your name?");
-  hours = prompt("Hi there, " + name + ". How many hours have you spent playing the guitar?");
-
-  var namePlayer = new Player(name, hours);
-
-  answer = parseInt(hours);
-
->>>>>>> 2f70b70f59472c8f09ff465c574da2e1df7cd708
-  if (answer <= 1) {
-    message = ("Damn, " + name + ". You need to start playing the guitar!");
-  }
-  else if (answer <= 100 ) {
-    message = ("Cool, " + name + ". You are an intermediate guitar player.");
-  }
-  else {
-   message = ("Wow, " + name + ". You're an expert guitar player!");
-  }
-<<<<<<< HEAD
-=======
-
->>>>>>> 2f70b70f59472c8f09ff465c574da2e1df7cd708
-  alert(message);
-</script>
+    <script type="text/javascript">
+      window.onload = function () {
+        var answer, message, hours, name;
+        var Player = function(name, hours) {
+          this.name = name;
+          this.hours = hours;
+        }
+        name = prompt("What is your name?");
+        hours = prompt("Hi there, " + name + ". How many hours have you spent playing the guitar?");
+        var namePlayer = new Player(name, hours);
+        answer = parseInt(hours);
+        if (answer <= 1) {
+          message = ("Damn, " + name + ". You need to start playing the guitar!");
+        }
+        else if (answer <= 100 ) {
+          message = ("Cool, " + name + ". You are an intermediate guitar player.");
+        }
+        else {
+         message = ("Wow, " + name + ". You're an expert guitar player!");
+        }
+        alert(message);
+      }
+    </script>
+  </body>
+</html>
