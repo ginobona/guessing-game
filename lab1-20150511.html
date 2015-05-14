@@ -1,0 +1,21 @@
+<script type="text/javascript">
+  var answer, message, hours, name;
+  var Player = function(name, hours) {
+    this.name = name;
+    this.hours = hours;
+  }
+  name = prompt("What is your name?");
+  hours = prompt("Hi there, " + name + ". How many hours have you spent playing the guitar?");
+  var namePlayer = new Player(name, hours);
+  answer = parseInt(hours);
+  if (answer <= 1) {
+    message = ("Damn, " + name + ". You need to start playing the guitar!");
+  }
+  else if (answer <= 100 ) {
+    message = ("Cool, " + name + ". You are an intermediate guitar player.");
+  }
+  else {
+   message = ("Wow, " + name + ". You're an expert guitar player!");
+  }
+  alert(message);
+</script>
